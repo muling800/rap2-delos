@@ -3,7 +3,7 @@ import { IConfigOptions } from "../types"
 let config: IConfigOptions = {
   version: '2.9.0',
   serve: {
-    port: (process.env.SERVE_PORT && parseInt(process.env.SERVE_PORT)) || 8080,
+    port: (process.env.SERVE_PORT && parseInt(process.env.SERVE_PORT)) || 8889,
     path: '',
   },
   keys: ['some secret hurr'],
@@ -15,8 +15,8 @@ let config: IConfigOptions = {
     host: process.env.MYSQL_URL || 'localhost',
     port: (process.env.MYSQL_PORT && parseInt(process.env.MYSQL_PORT)) || 3306,
     username: process.env.MYSQL_USERNAME || 'root',
-    password: process.env.MYSQL_PASSWD || '',
-    database: process.env.MYSQL_SCHEMA || 'RAP2_DELOS_APP_LOCAL',
+    password: process.env.MYSQL_PASSWD || 'vrhW2pk2&HR3',
+    database: process.env.MYSQL_SCHEMA || 'rap2_delos_app',
     pool: {
       max: 5,
       min: 0,
